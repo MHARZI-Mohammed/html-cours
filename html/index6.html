@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours HTML - 7. Formulaires</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <nav class="sidebar">
+            <h2>Cours HTML</h2>
+            <ul>
+                <li class="active"><a href="html/index.html">1. Introduction au HTML</a></li>
+                <li><a href="html/index1.html">2. Structure de base</a></li>
+                <li><a href="html/index2.html">3. Balises de texte</a></li>
+                <li><a href="html/index3.html">4. Liens et images</a></li>
+                <li><a href="html/index4.html">5. Listes</a></li>
+                <li><a href="html/index5.html">6. Tableaux</a></li>
+                <li><a href="html/index6.html">7. Formulaires</a></li>
+                <li><a href="html/index7.html">8. Balises sémantiques</a></li>
+                <li><a href="html/index8.html">9. Intégration multimédia</a></li>
+                <li><a href="html/index9.html">10. Validation HTML</a></li>
+            </ul>
+        </nav>
+        <main class="chapter-content">
+            <h2>7. Formulaires HTML</h2>
+            <section>
+                <h3>Structure et action :</h3>
+                <p>Le formulaire utilise la balise <code>&lt;form&gt;</code> avec les attributs <code>action</code> (où envoyer les données) et <code>method</code> (GET ou POST).</p>
+            </section>
+            <section>
+                <h3>Éléments d'entrée :</h3>
+                <p>La balise <code>&lt;input&gt;</code> est la plus polyvalente (type="text", "email", "password", "submit", etc.). La balise <code>&lt;label&gt;</code> est essentielle pour associer une étiquette à un champ (accessibilité).</p>
+            </section>
+
+            <div class="pratique">
+                <h3>Pratique : Case à cocher</h3>
+                <p>Créez une étiquette "J'accepte les conditions" et associez-lui une case à cocher (checkbox).</p>
+                
+                <textarea placeholder="Écrivez le code HTML pour la case à cocher..."></textarea>
+                
+                <input type="checkbox" id="toggle-c7" class="solution-toggle">
+                <label for="toggle-c7" class="toggle-solution">Afficher la Correction</label>
+
+                <div class="solution-box">
+                    <h4>Correction :</h4>
+                    <div class="solution-code">
+                        &lt;form action="#"&gt;<br>
+                        &nbsp;&nbsp;&lt;input type="checkbox" id="conditions" name="conditions" value="oui"&gt;<br>
+                        &nbsp;&nbsp;&lt;label for="conditions"&gt;J'accepte les conditions&lt;/label&gt;<br>
+                        &lt;/form&gt;
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <button onclick="location.href='html/index5.html'">Chapitre précédent</button>
+                <button onclick="location.href='html/index7.html'">Chapitre suivant</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

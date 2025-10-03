@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours HTML - 4. Liens et images</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <nav class="sidebar">
+            <h2>Cours HTML</h2>
+            <ul>
+                <li class="active"><a href="html/index.html">1. Introduction au HTML</a></li>
+                <li><a href="html/index1.html">2. Structure de base</a></li>
+                <li><a href="html/index2.html">3. Balises de texte</a></li>
+                <li><a href="html/index3.html">4. Liens et images</a></li>
+                <li><a href="html/index4.html">5. Listes</a></li>
+                <li><a href="html/index5.html">6. Tableaux</a></li>
+                <li><a href="html/index6.html">7. Formulaires</a></li>
+                <li><a href="html/index7.html">8. Balises sémantiques</a></li>
+                <li><a href="html/index8.html">9. Intégration multimédia</a></li>
+                <li><a href="html/index9.html">10. Validation HTML</a></li>
+            </ul>
+        </nav>
+        <main class="chapter-content">
+            <h2>4. Liens et images</h2>
+            <section>
+                <h3>Balise de lien : <code>&lt;a&gt;</code></h3>
+                <p>La balise <code>&lt;a&gt;</code> crée un hyperlien. L'attribut <strong><code>href</code></strong> est la destination. Utilisez <code>target="_blank"</code> pour ouvrir dans un nouvel onglet.</p>
+            </section>
+            <section>
+                <h3>Balise d'image : <code>&lt;img&gt;</code></h3>
+                <p>La balise <code>&lt;img&gt;</code> insère une image. Elle nécessite l'attribut <strong><code>src</code></strong> (chemin) et <strong><code>alt</code></strong> (description essentielle pour l'accessibilité).</p>
+            </section>
+
+            <div class="pratique">
+                <h3>Pratique : Liens et Image</h3>
+                <p>Créez un lien vers **https://www.google.com** avec le texte "Recherche Google" et, juste en dessous, insérez une image nommée "logo.png" avec l'attribut alt "Logo de l'entreprise".</p>
+                
+                <textarea placeholder="Écrivez le code HTML pour le lien et l'image..."></textarea>
+                
+                <input type="checkbox" id="toggle-c4" class="solution-toggle">
+                <label for="toggle-c4" class="toggle-solution">Afficher la Correction</label>
+
+                <div class="solution-box">
+                    <h4>Correction :</h4>
+                    <div class="solution-code">
+                        &lt;p&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="https://www.google.com"&gt;Recherche Google&lt;/a&gt;<br>
+                        &lt;/p&gt;<br>
+                        &lt;img src="logo.png" alt="Logo de l'entreprise"&gt;
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <button onclick="location.href='html/index2.html'">Chapitre précédent</button>
+                <button onclick="location.href='html/index4.html'">Chapitre suivant</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours HTML - 8. Balises sémantiques</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <nav class="sidebar">
+            <h2>Cours HTML</h2>
+            <ul>
+                <li class="active"><a href="html/index.html">1. Introduction au HTML</a></li>
+                <li><a href="html/index1.html">2. Structure de base</a></li>
+                <li><a href="html/index2.html">3. Balises de texte</a></li>
+                <li><a href="html/index3.html">4. Liens et images</a></li>
+                <li><a href="html/index4.html">5. Listes</a></li>
+                <li><a href="html/index5.html">6. Tableaux</a></li>
+                <li><a href="html/index6.html">7. Formulaires</a></li>
+                <li><a href="html/index7.html">8. Balises sémantiques</a></li>
+                <li><a href="html/index8.html">9. Intégration multimédia</a></li>
+                <li><a href="html/index9.html">10. Validation HTML</a></li>
+            </ul>
+        </nav>
+        <main class="chapter-content">
+            <h2>8. Balises sémantiques</h2>
+            <section>
+                <h3>Le sens avant le style :</h3>
+                <p>Les balises sémantiques (comme <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>) décrivent la **nature** de leur contenu, aidant les moteurs de recherche et les outils d'accessibilité à comprendre la structure de la page.</p>
+            </section>
+            <section>
+                <h3>Balises de contenu :</h3>
+                <p><code>&lt;article&gt;</code> est pour le contenu indépendant (comme un post de blog). <code>&lt;section&gt;</code> est un regroupement thématique général.</p>
+            </section>
+
+            <div class="pratique">
+                <h3>Pratique : Le bloc de navigation</h3>
+                <p>Encadrez une liste de liens ("Accueil", "Produits", "Contact") avec la balise sémantique appropriée.</p>
+                
+                <textarea placeholder="Écrivez le code HTML sémantique..."></textarea>
+                
+                <input type="checkbox" id="toggle-c8" class="solution-toggle">
+                <label for="toggle-c8" class="toggle-solution">Afficher la Correction</label>
+
+                <div class="solution-box">
+                    <h4>Correction :</h4>
+                    <div class="solution-code">
+                        &lt;nav&gt;<br>
+                        &nbsp;&nbsp;&lt;ul&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Accueil&lt;/a&gt;&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Produits&lt;/a&gt;&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&lt;/ul&gt;<br>
+                        &lt;/nav&gt;
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <button onclick="location.href='html/index6.html'">Chapitre précédent</button>
+                <button onclick="location.href='html/index8.html'">Chapitre suivant</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

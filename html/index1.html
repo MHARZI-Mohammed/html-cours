@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours HTML - 2. Structure de base</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <nav class="sidebar">
+            <h2>Cours HTML</h2>
+           
+            <ul>
+                <li class="active"><a href="html/index.html">1. Introduction au HTML</a></li>
+                <li><a href="html/index1.html">2. Structure de base</a></li>
+                <li><a href="html/index2.html">3. Balises de texte</a></li>
+                <li><a href="html/index3.html">4. Liens et images</a></li>
+                <li><a href="html/index4.html">5. Listes</a></li>
+                <li><a href="html/index5.html">6. Tableaux</a></li>
+                <li><a href="html/index6.html">7. Formulaires</a></li>
+                <li><a href="html/index7.html">8. Balises sémantiques</a></li>
+                <li><a href="html/index8.html">9. Intégration multimédia</a></li>
+                <li><a href="html/index9.html">10. Validation HTML</a></li>
+            </ul>
+
+
+
+        </nav>
+        <main class="chapter-content">
+            <h2>2. Structure de base d'un document HTML</h2>
+            <section>
+                <h3>Les balises fondamentales :</h3>
+                <p>Le squelette de toute page web est défini par <code>&lt;!DOCTYPE html&gt;</code>, <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> (pour les métadonnées) et <code>&lt;body&gt;</code> (pour le contenu visible).</p>
+            </section>
+            <section>
+                <h3>La balise <code>&lt;head&gt;</code> :</h3>
+                <p>Elle contient des informations vitales pour le navigateur et les moteurs de recherche, comme le titre de la fenêtre (<code>&lt;title&gt;</code>) et l'encodage des caractères (<code>&lt;meta charset="UTF-8"&gt;</code>).</p>
+            </section>
+
+            <div class="pratique">
+                <h3>Pratique : Complétez la structure</h3>
+                <p>Écrivez la structure complète d'un document HTML5 qui affiche le titre "Mon Portfolio" dans la barre du navigateur.</p>
+                
+                <textarea placeholder="Écrivez le code complet..."></textarea>
+                
+                <input type="checkbox" id="toggle-c2" class="solution-toggle">
+                <label for="toggle-c2" class="toggle-solution">Afficher la Correction</label>
+
+                <div class="solution-box">
+                    <h4>Correction :</h4>
+                    <div class="solution-code">
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html lang="fr"&gt;<br>
+                        &lt;head&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Mon Portfolio&lt;/title&gt;<br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Contenu ici --&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <button onclick="location.href='html/index.html'">Chapitre précédent</button>
+                <button onclick="location.href='html/index2.html'">Chapitre suivant</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

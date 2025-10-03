@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours HTML - 9. Intégration multimédia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <nav class="sidebar">
+            <h2>Cours HTML</h2>
+            <ul>
+                <li class="active"><a href="html/index.html">1. Introduction au HTML</a></li>
+                <li><a href="html/index1.html">2. Structure de base</a></li>
+                <li><a href="html/index2.html">3. Balises de texte</a></li>
+                <li><a href="html/index3.html">4. Liens et images</a></li>
+                <li><a href="html/index4.html">5. Listes</a></li>
+                <li><a href="html/index5.html">6. Tableaux</a></li>
+                <li><a href="html/index6.html">7. Formulaires</a></li>
+                <li><a href="html/index7.html">8. Balises sémantiques</a></li>
+                <li><a href="html/index8.html">9. Intégration multimédia</a></li>
+                <li><a href="html/index9.html">10. Validation HTML</a></li>
+            </ul>
+        </nav>
+        <main class="chapter-content">
+            <h2>9. Intégration multimédia</h2>
+            <section>
+                <h3>Audio et Vidéo :</h3>
+                <p>Les balises <code>&lt;audio&gt;</code> et <code>&lt;video&gt;</code> permettent d'intégrer nativement les médias. L'attribut <strong><code>controls</code></strong> est essentiel pour donner le contrôle à l'utilisateur.</p>
+            </section>
+            <section>
+                <h3>Iframes (Contenu externe) :</h3>
+                <p>La balise <code>&lt;iframe&gt;</code> est utilisée pour intégrer du contenu d'une autre source (par exemple, une vidéo YouTube ou une carte Google Maps).</p>
+            </section>
+
+            <div class="pratique">
+                <h3>Pratique : Intégration Vidéo</h3>
+                <p>Écrivez le code pour intégrer une vidéo nommée "demo.mp4" d'une largeur de 640 pixels, en vous assurant que l'utilisateur a les contrôles de lecture.</p>
+                
+                <textarea placeholder="Écrivez le code HTML pour la vidéo..."></textarea>
+                
+                <input type="checkbox" id="toggle-c9" class="solution-toggle">
+                <label for="toggle-c9" class="toggle-solution">Afficher la Correction</label>
+
+                <div class="solution-box">
+                    <h4>Correction :</h4>
+                    <div class="solution-code">
+                        &lt;video width="640" controls&gt;<br>
+                        &nbsp;&nbsp;&lt;source src="demo.mp4" type="video/mp4"&gt;<br>
+                        &nbsp;&nbsp;Votre navigateur ne supporte pas la balise vidéo.<br>
+                        &lt;/video&gt;
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <button onclick="location.href='html/index7.html'">Chapitre précédent</button>
+                <button onclick="location.href='html/index9.html'">Chapitre suivant</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

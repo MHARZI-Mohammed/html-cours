@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours HTML - 6. Tableaux</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <nav class="sidebar">
+            <h2>Cours HTML</h2>
+            <ul>
+                <li class="active"><a href="html/index.html">1. Introduction au HTML</a></li>
+                <li><a href="html/index1.html">2. Structure de base</a></li>
+                <li><a href="html/index2.html">3. Balises de texte</a></li>
+                <li><a href="html/index3.html">4. Liens et images</a></li>
+                <li><a href="html/index4.html">5. Listes</a></li>
+                <li><a href="html/index5.html">6. Tableaux</a></li>
+                <li><a href="html/index6.html">7. Formulaires</a></li>
+                <li><a href="html/index7.html">8. Balises sémantiques</a></li>
+                <li><a href="html/index8.html">9. Intégration multimédia</a></li>
+                <li><a href="html/index9.html">10. Validation HTML</a></li>
+            </ul>
+        </nav>
+        <main class="chapter-content">
+            <h2>6. Tableaux</h2>
+            <section>
+                <h3>Balises principales :</h3>
+                <p>Le tableau commence avec <code>&lt;table&gt;</code>. Chaque ligne utilise <code>&lt;tr&gt;</code>. Les en-têtes sont <code>&lt;th&gt;</code> et les cellules de données sont <code>&lt;td&gt;</code>.</p>
+            </section>
+            <section>
+                <h3>Sémantique avancée :</h3>
+                <p>Utilisez <code>&lt;thead&gt;</code> pour l'en-tête du tableau et <code>&lt;tbody&gt;</code> pour le corps des données. C'est essentiel pour les grands tableaux.</p>
+            </section>
+
+            <div class="pratique">
+                <h3>Pratique : Créez un tableau simple</h3>
+                <p>Créez un tableau avec les en-têtes "Mois" et "Ventes", et ajoutez une ligne de données pour "Janvier" et "1500€".</p>
+                
+                <textarea placeholder="Écrivez le code HTML pour le tableau..."></textarea>
+                
+                <input type="checkbox" id="toggle-c6" class="solution-toggle">
+                <label for="toggle-c6" class="toggle-solution">Afficher la Correction</label>
+
+                <div class="solution-box">
+                    <h4>Correction :</h4>
+                    <div class="solution-code">
+                        &lt;table border="1"&gt;<br>
+                        &nbsp;&nbsp;&lt;thead&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Mois&lt;/th&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Ventes&lt;/th&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                        &nbsp;&nbsp;&lt;/thead&gt;<br>
+                        &nbsp;&nbsp;&lt;tbody&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Janvier&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;1500€&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                        &nbsp;&nbsp;&lt;/tbody&gt;<br>
+                        &lt;/table&gt;
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <button onclick="location.href='html/index4.html'">Chapitre précédent</button>
+                <button onclick="location.href='html/index5.html'">Chapitre suivant</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

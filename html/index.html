@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours HTML - 1. Introduction au HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <nav class="sidebar">
+            <h2>Cours HTML</h2>
+            <ul>
+                <li class="active"><a href="html/index.html">1. Introduction au HTML</a></li>
+                <li><a href="html/index1.html">2. Structure de base</a></li>
+                <li><a href="html/index2.html">3. Balises de texte</a></li>
+                <li><a href="html/index3.html">4. Liens et images</a></li>
+                <li><a href="html/index4.html">5. Listes</a></li>
+                <li><a href="html/index5.html">6. Tableaux</a></li>
+                <li><a href="html/index6.html">7. Formulaires</a></li>
+                <li><a href="html/index7.html">8. Balises sémantiques</a></li>
+                <li><a href="html/index8.html">9. Intégration multimédia</a></li>
+                <li><a href="html/index9.html">10. Validation HTML</a></li>
+            </ul>
+        </nav>
+        <main class="chapter-content">
+            <h2>1. Introduction au HTML</h2>
+            <section>
+                <h3>Qu'est-ce que le HTML ?</h3>
+                <p><strong>HTML</strong> (HyperText Markup Language) est le **langage de balisage** fondamental pour structurer le contenu web. Il n'est pas un langage de programmation, mais il définit la hiérarchie de vos éléments (titres, paragraphes, médias).</p>
+            </section>
+            <section>
+                <h3>Exemple de base :</h3>
+                <div class="code-example">
+                    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Ma première page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Bonjour le monde !&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </pre>
+                </div>
+            </section>
+
+            <div class="pratique">
+                <h3>Pratique : Votre première balise !</h3>
+                <p>Écrivez uniquement la balise HTML nécessaire pour afficher le texte "Bienvenue sur mon site" comme un **titre de niveau 1**.</p>
+                
+                <textarea placeholder="Écrivez votre balise <h1> ici..."></textarea>
+                
+                <input type="checkbox" id="toggle-c1" class="solution-toggle">
+                <label for="toggle-c1" class="toggle-solution">Afficher la Correction</label>
+
+                <div class="solution-box">
+                    <h4>Correction :</h4>
+                    <div class="solution-code">
+                        &lt;h1&gt;Bienvenue sur mon site&lt;/h1&gt;
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <button disabled>Chapitre précédent</button>
+                <button onclick="location.href='html/index1.html'">Chapitre suivant</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours HTML - 3. Balises de texte</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <nav class="sidebar">
+            <h2>Cours HTML</h2>
+            <ul>
+                <li class="active"><a href="html/index.html">1. Introduction au HTML</a></li>
+                <li><a href="html/index1.html">2. Structure de base</a></li>
+                <li><a href="html/index2.html">3. Balises de texte</a></li>
+                <li><a href="html/index3.html">4. Liens et images</a></li>
+                <li><a href="html/index4.html">5. Listes</a></li>
+                <li><a href="html/index5.html">6. Tableaux</a></li>
+                <li><a href="html/index6.html">7. Formulaires</a></li>
+                <li><a href="html/index7.html">8. Balises sémantiques</a></li>
+                <li><a href="html/index8.html">9. Intégration multimédia</a></li>
+                <li><a href="html/index9.html">10. Validation HTML</a></li>
+            </ul>
+        </nav>
+        <main class="chapter-content">
+            <h2>3. Balises de texte</h2>
+            <section>
+                <h3>Hiérarchie et importance :</h3>
+                <p>Utilisez <code>&lt;h1&gt;</code> à <code>&lt;h6&gt;</code> pour les titres et <code>&lt;p&gt;</code> pour les paragraphes. Les balises <code>&lt;strong&gt;</code> (importance forte, souvent gras) et <code>&lt;em&gt;</code> (emphase, souvent italique) sont sémantiques.</p>
+            </section>
+            <section>
+                <h3>Les sauts :</h3>
+                <p>La balise <code>&lt;br&gt;</code> est utilisée pour un simple saut de ligne. La balise <code>&lt;hr&gt;</code> insère une ligne horizontale pour séparer le contenu thématiquement.</p>
+            </section>
+
+            <div class="pratique">
+                <h3>Pratique : Formatez un texte</h3>
+                <p>Écrivez le code pour obtenir : un titre de niveau 2, suivi d'un paragraphe où le mot "attention" est en gras (strong) et le reste du paragraphe est sur deux lignes distinctes.</p>
+                
+                <textarea placeholder="Écrivez le code HTML pour formater le texte..."></textarea>
+                
+                <input type="checkbox" id="toggle-c3" class="solution-toggle">
+                <label for="toggle-c3" class="toggle-solution">Afficher la Correction</label>
+
+                <div class="solution-box">
+                    <h4>Correction :</h4>
+                    <div class="solution-code">
+                        &lt;h2&gt;Rapport quotidien&lt;/h2&gt;<br>
+                        &lt;p&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Veuillez prêter &lt;strong&gt;attention&lt;/strong&gt; au rapport.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;br&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Il contient toutes les données récentes.<br>
+                        &lt;/p&gt;
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <button onclick="location.href='html/index1.html'">Chapitre précédent</button>
+                <button onclick="location.href='html/index3.html'">Chapitre suivant</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

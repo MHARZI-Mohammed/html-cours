@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours HTML - 10. Validation HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <nav class="sidebar">
+            <h2>Cours HTML</h2>
+            <ul>
+                <li class="active"><a href="html/index.html">1. Introduction au HTML</a></li>
+                <li><a href="html/index1.html">2. Structure de base</a></li>
+                <li><a href="html/index2.html">3. Balises de texte</a></li>
+                <li><a href="html/index3.html">4. Liens et images</a></li>
+                <li><a href="html/index4.html">5. Listes</a></li>
+                <li><a href="html/index5.html">6. Tableaux</a></li>
+                <li><a href="html/index6.html">7. Formulaires</a></li>
+                <li><a href="html/index7.html">8. Balises sémantiques</a></li>
+                <li><a href="html/index8.html">9. Intégration multimédia</a></li>
+                <li><a href="html/index9.html">10. Validation HTML</a></li>
+            </ul>
+        </nav>
+        <main class="chapter-content">
+            <h2>10. Validation HTML</h2>
+            <section>
+                <h3>Qu'est-ce que la validation ?</h3>
+                <p>C'est le processus de vérification de votre code HTML par rapport aux **standards définis par le W3C**. Un code valide assure une meilleure compatibilité et accessibilité.</p>
+            </section>
+            <section>
+                <h3>Erreurs courantes :</h3>
+                <p>Oublier de fermer une balise (ex: <code>&lt;p&gt;</code>), ne pas inclure l'attribut <code>alt</code> dans une balise <code>&lt;img&gt;</code>, ou utiliser une balise non standard.</p>
+            </section>
+
+            <div class="pratique">
+                <h3>Pratique : Correction d'erreur</h3>
+                <p>Le code ci-dessous contient une erreur de validation courante. Identifiez et corrigez-la :</p>
+                
+                <div class="code-example">
+                    <pre>
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;Ceci est un paragraphe
+&lt;/body&gt;
+&lt;/html&gt;
+                    </pre>
+                </div>
+                
+                <textarea placeholder="Écrivez le code HTML corrigé..."></textarea>
+                
+                <input type="checkbox" id="toggle-c10" class="solution-toggle">
+                <label for="toggle-c10" class="toggle-solution">Afficher la Correction</label>
+
+                <div class="solution-box">
+                    <h4>Correction :</h4>
+                    <p>L'erreur est le paragraphe non fermé. On a ajouté <code>&lt;/p&gt;</code>.</p>
+                    <div class="solution-code">
+                        &lt;html&gt;<br>
+                        &lt;head&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page&lt;/title&gt;<br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Ceci est un paragraphe&lt;/p&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <button onclick="location.href='html/index8.html'">Chapitre précédent</button>
+                <button disabled>Fin du cours</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

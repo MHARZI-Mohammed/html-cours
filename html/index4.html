@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours HTML - 5. Listes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <nav class="sidebar">
+            <h2>Cours HTML</h2>
+            <ul>
+                <li class="active"><a href="html/index.html">1. Introduction au HTML</a></li>
+                <li><a href="html/index1.html">2. Structure de base</a></li>
+                <li><a href="html/index2.html">3. Balises de texte</a></li>
+                <li><a href="html/index3.html">4. Liens et images</a></li>
+                <li><a href="html/index4.html">5. Listes</a></li>
+                <li><a href="html/index5.html">6. Tableaux</a></li>
+                <li><a href="html/index6.html">7. Formulaires</a></li>
+                <li><a href="html/index7.html">8. Balises sémantiques</a></li>
+                <li><a href="html/index8.html">9. Intégration multimédia</a></li>
+                <li><a href="html/index9.html">10. Validation HTML</a></li>
+            </ul>
+        </nav>
+        <main class="chapter-content">
+            <h2>5. Listes</h2>
+            <section>
+                <h3>Listes non ordonnées (<code>&lt;ul&gt;</code>) :</h3>
+                <p>Utilisent des puces (points). Idéales pour une liste d'éléments où l'ordre n'a pas d'importance.</p>
+            </section>
+            <section>
+                <h3>Listes ordonnées (<code>&lt;ol&gt;</code>) :</h3>
+                <p>Utilisent des chiffres ou des lettres. Idéales pour des étapes ou un classement.</p>
+                <p>Dans les deux cas, chaque élément est une balise <code>&lt;li&gt;</code>.</p>
+            </section>
+
+            <div class="pratique">
+                <h3>Pratique : Listes mélangées</h3>
+                <p>Créez une liste ordonnée pour les trois premières étapes d'une recette (Mélanger, Cuire, Servir) et, à l'intérieur de la troisième étape, imbriquez une liste non ordonnée des garnitures (Crème, Poudre de sucre).</p>
+                
+                <textarea placeholder="Écrivez le code HTML pour les listes imbriquées..."></textarea>
+                
+                <input type="checkbox" id="toggle-c5" class="solution-toggle">
+                <label for="toggle-c5" class="toggle-solution">Afficher la Correction</label>
+
+                <div class="solution-box">
+                    <h4>Correction :</h4>
+                    <div class="solution-code">
+                        &lt;ol&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Mélanger les ingrédients.&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Cuire au four.&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Servir avec :<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Crème&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Poudre de sucre&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+                        &nbsp;&nbsp;&lt;/li&gt;<br>
+                        &lt;/ol&gt;
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <button onclick="location.href='html/index3.html'">Chapitre précédent</button>
+                <button onclick="location.href='html/index5.html'">Chapitre suivant</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
